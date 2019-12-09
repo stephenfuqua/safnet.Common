@@ -1,15 +1,12 @@
 ﻿using Ganss.XSS;
-using System.Collections.Generic;
 
 namespace safnet.Common.Utility
 {
     public class Sanitizer : ISanitizer
     {
-        
         public string RemoveAllHtml(string input)
         {
-            var emptyList = new List<string>();
-            return new HtmlSanitizer(allowedTags: emptyList, allowedAttributes: emptyList, allowedCssProperties: emptyList, allowedSchemes: emptyList)
+            return new HtmlSanitizer(allowedTags: new string[0], allowedAttributes: new string[0], allowedCssProperties: new string[0], allowedSchemes: new string[0])
                 .Sanitize(input);
         }
 

@@ -4,7 +4,7 @@ namespace safnet.Common.Exceptions
 {
     public class ServerException : Exception
     {
-        public const string MESSAGE = "A server error occurred.";
+        public const string DefaultMessage = "A server error occurred.";
 
         public DatabaseExceptionContent Content { get; private set; }
 
@@ -12,13 +12,13 @@ namespace safnet.Common.Exceptions
         {
         }
 
-        protected ServerException() : base(MESSAGE)
+        protected ServerException() : base(DefaultMessage)
         {
 
         }
 
         protected ServerException(Exception inner)    
-            : base(MESSAGE, inner)
+            : base(DefaultMessage, inner)
         {
         }
 

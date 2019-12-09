@@ -6,27 +6,24 @@ namespace safnet.Common.Exceptions
 {
     public class DomainValidationException : Exception
     {
-        public const string MESSAGE = "A validation error has occurred.";
+        public const string DefaultMessage = "A validation error has occurred.";
  
         public IEnumerable<ValidationResult> ValidationResults
         {
             get; private set;
         }
 
-        private DomainValidationException() : base(MESSAGE)
+        private DomainValidationException() : base(DefaultMessage)
         {
         }
 
 
         public static DomainValidationException Create(IEnumerable<ValidationResult> results)
         {
-            if (results == null)
+            var e = new DomainValidationException
             {
-                throw new ArgumentNullException("reults");
-            }
-
-            var e = new DomainValidationException();
-            e.ValidationResults = results;
+                ValidationResults = results ?? throw new ArgumentNullException(nameof(results))
+            };
 
             return e;
         }

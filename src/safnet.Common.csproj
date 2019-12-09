@@ -81,7 +81,6 @@
     <Compile Include="Exceptions\DomainValidationException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\ISanitizer.cs" />
-    <Compile Include="Utility\NotificationModel.cs" />
     <Compile Include="Utility\Sanitizer.cs" />
   </ItemGroup>
   <ItemGroup>

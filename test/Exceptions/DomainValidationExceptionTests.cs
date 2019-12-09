@@ -21,7 +21,7 @@ namespace safnet.Common.UnitTests.Exceptions
                 var system = DomainValidationException.Create(list);
 
                 Assert.Same(list, system.ValidationResults);
-                Assert.Equal(DomainValidationException.MESSAGE, system.Message);
+                Assert.Equal(DomainValidationException.DefaultMessage, ((Exception) system).Message);
             }
 
             [Fact]

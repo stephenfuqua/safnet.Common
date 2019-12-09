@@ -14,95 +14,95 @@ namespace safnet.Common.UnitTests.Exceptions
 
         public class WrapAGeneralExceptionInServerExceptionWithNonNullId
         {
-            const int id = 23423423;
-            const string action = "Update";
-            const string message = "this is a message";
-            static Exception exception = new Exception(message);
-            static Type type = typeof(Entity);
+            const int Id = 23423423;
+            const string Action = "Update";
+            const string Message = "this is a message";
+            static Exception _exception = new Exception(Message);
+            static Type _type = typeof(Entity);
 
             private ServerException RunTheTest()
             {
-                return ServerException.HandleException<Entity>(exception, action, id);
+                return ServerException.HandleException<Entity>(_exception, Action, Id);
             }
 
             [Fact]
             public void ConfirmThatTheExceptionMessageIsStaticConstant()
             {
-                Assert.Equal(ServerException.MESSAGE, RunTheTest().Message);
+                Assert.Equal(ServerException.DefaultMessage, ((Exception) RunTheTest()).Message);
             }
 
             [Fact]
             public void ConfirmTheInnerException()
             {
-                Assert.Same(exception, RunTheTest().InnerException);
+                Assert.Same(_exception, RunTheTest().InnerException);
             }
 
             [Fact]
             public void ConfirmTheContentDescriptionProperty()
             {
-                Assert.Equal(message, RunTheTest().Content.Description);
+                Assert.Equal(Message, RunTheTest().Content.Description);
             }
 
             [Fact]
             public void ConfirmTheContentIdProperty()
             {
-                Assert.Equal(id, RunTheTest().Content.Id);
+                Assert.Equal(Id, RunTheTest().Content.Id);
             }
 
             [Fact]
             public void ConfirmTheContentActionProperty()
             {
-                Assert.Equal(action, RunTheTest().Content.Action);
+                Assert.Equal(Action, RunTheTest().Content.Action);
             }
 
             [Fact]
             public void ConfirmTheContentModelTypeProperty()
             {
-                Assert.Equal(type, RunTheTest().Content.ModelType);
+                Assert.Equal(_type, RunTheTest().Content.ModelType);
             }
         }
 
         public class CreateExceptionForAFailedDatabaseUpdate
         {
-            const string description = "Something bad happened";
-            const int id = 23423423;
-            const string action = "Update";
-            static Type type = typeof(Entity);
+            const string Description = "Something bad happened";
+            const int Id = 23423423;
+            const string Action = "Update";
+            static Type _type = typeof(Entity);
 
 
             private static ServerException RunTheTest()
             {
-                return ServerException.UpdateFailed<Entity>(description, id);
+                return ServerException.UpdateFailed<Entity>(Description, Id);
             }
 
             [Fact]
             public void ConfirmThatTheExceptionMessageIsStaticConstant()
             {
-                Assert.Equal(ServerException.MESSAGE, RunTheTest().Message);
+                Assert.Equal(ServerException.DefaultMessage, ((Exception) RunTheTest()).Message);
             }
 
             [Fact]
             public void ConfirmTheContentDescriptionProperty()
             {
-                Assert.Equal(description, RunTheTest().Content.Description);
+                Assert.Equal(Description, RunTheTest().Content.Description);
             }
 
             [Fact]
             public void ConfirmTheContentIdProperty()
             {
-                Assert.Equal(id, RunTheTest().Content.Id);
+                Assert.Equal(Id, RunTheTest().Content.Id);
             }
 
             [Fact]
             public void ConfirmTheContentActionProperty()
             {
-                Assert.Equal(action, RunTheTest().Content.Action);
+                Assert.Equal(Action, RunTheTest().Content.Action);
             }
 
             [Fact]
             public void ConfirmTheContentModelTypeProperty()
             {
-                Assert.Equal(type, RunTheTest().Content.ModelType);
+                Assert.Equal(_type, RunTheTest().Content.ModelType);
             }
         }
     }
