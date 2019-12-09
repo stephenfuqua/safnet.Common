@@ -136,8 +136,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiControllerCustomization.cs" />
-    <Compile Include="BaseTester.cs" />
     <Compile Include="Exceptions\DatabaseExceptionContentTests.cs" />
     <Compile Include="Exceptions\ServerExceptionTests.cs" />
     <Compile Include="Exceptions\UserExceptionTests.cs" />
@@ -156,7 +154,7 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\safnet.Common\safnet.Common.csproj">
+    <ProjectReference Include="..\src\safnet.Common.csproj">
       <Project>{05902c28-0900-4902-9300-0540eedac9c1}</Project>
       <Name>safnet.Common</Name>
     </ProjectReference>
