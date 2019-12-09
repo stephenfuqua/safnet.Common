@@ -1,5 +1,5 @@
 ﻿
-namespace FlightNode.Common.BaseClasses
+namespace safnet.Common.BaseClasses
 {
     public interface IEntity
     {

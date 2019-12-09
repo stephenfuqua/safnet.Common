@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Hosting;
 
-namespace FlightNode.Common.UnitTests
+namespace safnet.Common.UnitTests
 {
     public class ApiControllerCustomization : ICustomization
     {

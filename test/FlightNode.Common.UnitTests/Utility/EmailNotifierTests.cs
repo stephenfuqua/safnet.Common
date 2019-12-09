@@ -1,4 +1,4 @@
-﻿using FlightNode.Common.Utility;
+﻿using safnet.Common.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using Moq;
 using SendGrid;
 using System.Net.Mail;
 
-namespace FlightNode.Common.UnitTests.Utility
+namespace safnet.Common.UnitTests.Utility
 {
     public class EmailNotifierTests : BaseTester
     {

@@ -1,4 +1,4 @@
-﻿using FlightNode.Common.Exceptions;
+﻿using safnet.Common.Exceptions;
 using log4net;
 using System;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Web.Http.ExceptionHandling;
 using System.Web.Http.ModelBinding;
 using System.Web.Http.Results;
 
-namespace FlightNode.Common.Api.Filters
+namespace safnet.Common.Api.Filters
 {
     /// <summary>
     /// Exception handler of last resort, for when the filters handlers are not used.

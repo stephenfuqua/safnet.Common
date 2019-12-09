@@ -4,7 +4,7 @@ using System;
 using System.Net;
 using System.Web.Http.Filters;
 
-namespace FlightNode.Common.Api.Filters
+namespace safnet.Common.Api.Filters
 {
     public class InvalidApiRequestExceptionFilter : ExceptionFilterAttribute
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FlightNode.Common.Exceptions
+namespace safnet.Common.Exceptions
 {
     public class DoesNotExistException : Exception
     {

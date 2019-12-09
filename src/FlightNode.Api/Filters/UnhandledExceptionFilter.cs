@@ -3,7 +3,7 @@ using System;
 using System.Web.Http.Filters;
 
 
-namespace FlightNode.Common.Api.Filters
+namespace safnet.Common.Api.Filters
 {
     public class UnhandledExceptionFilterAttribute : ExceptionFilterAttribute
     {

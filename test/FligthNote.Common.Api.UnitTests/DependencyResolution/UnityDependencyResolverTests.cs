@@ -1,4 +1,4 @@
-﻿using FlightNode.Api.DependencyResolution;
+﻿using safnet.Api.DependencyResolution;
 using FligthNode.Common.Api.Controllers;
 using Microsoft.Practices.Unity;
 using Moq;

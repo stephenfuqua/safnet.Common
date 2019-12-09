@@ -1,7 +1,7 @@
 ﻿using Ganss.XSS;
 using System.Collections.Generic;
 
-namespace FlightNode.Common.Utility
+namespace safnet.Common.Utility
 {
     public class Sanitizer : ISanitizer
     {

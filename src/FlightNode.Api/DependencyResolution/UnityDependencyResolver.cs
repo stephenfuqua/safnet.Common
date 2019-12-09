@@ -31,7 +31,7 @@ in Unity 4.0, which prevents installation of the original Unity.WebAPI
 using Microsoft.Practices.Unity;
 using System.Web.Http.Dependencies;
 
-namespace FlightNode.Api.DependencyResolution
+namespace safnet.Api.DependencyResolution
 {
     public class UnityDependencyResolver : UnityDependencyScope, IDependencyResolver
     {

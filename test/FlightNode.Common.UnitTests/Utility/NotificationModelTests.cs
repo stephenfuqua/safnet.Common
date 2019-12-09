@@ -1,9 +1,9 @@
-﻿using FlightNode.Common.Utility;
+﻿using safnet.Common.Utility;
 using FluentAssertions;
 using System;
 using Xunit;
 
-namespace FlightNode.Common.UnitTests.Utility
+namespace safnet.Common.UnitTests.Utility
 {
     public class NotificationModelTests : BaseTester
     {
@@ -14,7 +14,7 @@ namespace FlightNode.Common.UnitTests.Utility
             {
                 var system = new NotificationModel("a", "b", "c");
 
-                Assert.Equal(FlightNode.Common.Properties.Settings.Default.FromEmail, system.FromEmail);
+                Assert.Equal(safnet.Common.Properties.Settings.Default.FromEmail, system.FromEmail);
             }
 
             [Fact]
@@ -22,7 +22,7 @@ namespace FlightNode.Common.UnitTests.Utility
             {
                 var system = new NotificationModel("a", "b", "c");
 
-                Assert.Equal(FlightNode.Common.Properties.Settings.Default.FromName, system.FromName);
+                Assert.Equal(safnet.Common.Properties.Settings.Default.FromName, system.FromName);
             }
 
             [Fact]

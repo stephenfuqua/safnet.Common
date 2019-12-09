@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace FlightNode.Common.Utility
+namespace safnet.Common.Utility
 {
     public interface IEmailNotifier
     {

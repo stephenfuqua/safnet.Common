@@ -1,4 +1,4 @@
-﻿namespace FlightNode.Common.Utility
+﻿namespace safnet.Common.Utility
 {
     public interface ISanitizer
     {

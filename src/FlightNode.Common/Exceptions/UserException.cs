@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FlightNode.Common.Exceptions
+namespace safnet.Common.Exceptions
 {
     /// <summary>
     /// An exception whose message is safe to show to the user. Typically indicates that that user

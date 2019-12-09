@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 using System.ComponentModel.DataAnnotations;
-using FlightNode.Common.Exceptions;
+using safnet.Common.Exceptions;
 
-namespace FlightNode.Common.UnitTests.Exceptions
+namespace safnet.Common.UnitTests.Exceptions
 {
     public class DomainValidationExceptionTests
     {

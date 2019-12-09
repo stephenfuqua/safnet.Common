@@ -1,6 +1,6 @@
 ﻿using SendGrid;
 
-namespace FlightNode.Common.Utility
+namespace safnet.Common.Utility
 {
     public interface IEmailFactory
     {

@@ -3,7 +3,7 @@ using Ploeh.AutoFixture.AutoMoq;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace FlightNode.Common.UnitTests
+namespace safnet.Common.UnitTests
 {
     public abstract class BaseTester
     {

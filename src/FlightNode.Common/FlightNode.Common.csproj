@@ -9,8 +9,8 @@
     <ProjectGuid>{05902C28-0900-4902-9300-0540EEDAC9C1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FlightNode.Common</RootNamespace>
-    <AssemblyName>FlightNode.Common</AssemblyName>
+    <RootNamespace>safnet.Common</RootNamespace>
+    <AssemblyName>safnet.Common</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>

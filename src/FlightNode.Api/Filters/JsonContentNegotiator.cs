@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 
-namespace FlightNode.Common.Api.Filters
+namespace safnet.Common.Api.Filters
 {
     public class JsonContentNegotiator : IContentNegotiator
     {

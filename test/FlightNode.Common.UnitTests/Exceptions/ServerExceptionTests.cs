@@ -1,9 +1,9 @@
-﻿using FlightNode.Common.BaseClasses;
-using FlightNode.Common.Exceptions;
+﻿using safnet.Common.BaseClasses;
+using safnet.Common.Exceptions;
 using System;
 using Xunit;
 
-namespace FlightNode.Common.UnitTests.Exceptions
+namespace safnet.Common.UnitTests.Exceptions
 {
     public class ServerExceptionTest
     {

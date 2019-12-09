@@ -33,7 +33,7 @@ using System;
 using System.Collections.Generic;
 using System.Web.Http.Dependencies;
 
-namespace FlightNode.Api.DependencyResolution
+namespace safnet.Api.DependencyResolution
 {
     public class UnityDependencyScope : IDependencyScope
     {

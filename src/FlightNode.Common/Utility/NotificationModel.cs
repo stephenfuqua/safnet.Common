@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FlightNode.Common.Utility
+namespace safnet.Common.Utility
 {
 
     public class NotificationModel

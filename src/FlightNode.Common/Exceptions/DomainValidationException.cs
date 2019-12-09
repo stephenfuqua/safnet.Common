@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace FlightNode.Common.Exceptions
+namespace safnet.Common.Exceptions
 {
     public class DomainValidationException : Exception
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace FlightNode.Common.Api.Models
+namespace safnet.Common.Api.Models
 {
     /// <summary>
     /// Useful when you want to send a simple string message back to the client, as JSON.

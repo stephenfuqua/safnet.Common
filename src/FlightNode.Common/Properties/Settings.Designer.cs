@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FlightNode.Common.Properties {
+namespace safnet.Common.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

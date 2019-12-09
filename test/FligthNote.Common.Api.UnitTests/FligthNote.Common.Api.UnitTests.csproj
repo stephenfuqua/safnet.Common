@@ -152,9 +152,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\FlightNode.Api\FlightNode.Common.Api.csproj">
+    <ProjectReference Include="..\..\src\safnet.Api\safnet.Common.Api.csproj">
       <Project>{35293658-9d86-44cc-bbe2-8674053633ab}</Project>
-      <Name>FlightNode.Common.Api</Name>
+      <Name>safnet.Common.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

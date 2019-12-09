@@ -1,4 +1,4 @@
-﻿namespace FlightNode.Common.Api.Models
+﻿namespace safnet.Common.Api.Models
 {
     /// <summary>
     /// This model is used when an API needs to present a very simple list of key-vaue pairs, e.g. for a select tag or list box.

@@ -1,7 +1,7 @@
-﻿using FlightNode.Common.Exceptions;
+﻿using safnet.Common.Exceptions;
 using Xunit;
 
-namespace FlightNode.Common.UnitTests.Exceptions
+namespace safnet.Common.UnitTests.Exceptions
 {
     public class DatabaseExceptionContentTests
     {
