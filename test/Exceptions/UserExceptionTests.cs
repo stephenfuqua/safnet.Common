@@ -1,28 +1,31 @@
 ﻿using safnet.Common.Exceptions;
 using System.Collections.Generic;
 using NUnit.Framework;
+using Shouldly;
 
 namespace safnet.Common.UnitTests.Exceptions
 {
+    [TestFixture]
     public class UserExceptionTests
     {
         [Test]
         public void ConfirmTheBasicConstructor()
         {
-            var message = "asdfasdf";
-            var actual = new UserException(message);
-            Assert.AreEqual(message, actual.Message);
+            var expected = "asdfasdf";
+            var actual = new UserException(expected);
+
+            actual.Message.ShouldBe(expected);
         }
         
         [Test]
         public void ConfirmMessageFromListWithOneError()
         {
-            var errors = new List<string>() { "one" };
             var expected = "one";
+            var errors = new List<string>() { expected };
 
             var actual = UserException.FromMultipleMessages(errors);
 
-            Assert.AreEqual(expected, actual.Message);
+            actual.Message.ShouldBe(expected);
         }
 
         [Test]
@@ -33,7 +36,7 @@ namespace safnet.Common.UnitTests.Exceptions
 
             var actual = UserException.FromMultipleMessages(errors);
 
-            Assert.AreEqual(expected, actual.Message);
+            actual.Message.ShouldBe(expected);
         }
     }
 }

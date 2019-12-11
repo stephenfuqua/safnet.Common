@@ -3,6 +3,7 @@ using safnet.Common.Exceptions;
 
 namespace safnet.Common.UnitTests.Exceptions
 {
+    [TestFixture]
     public class DatabaseExceptionContentTests
     {
         [Test]

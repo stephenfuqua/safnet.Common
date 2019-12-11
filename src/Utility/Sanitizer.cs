@@ -2,6 +2,8 @@
 
 namespace safnet.Common.Utility
 {
+    // This is an adapter over an external library and therefore should not be included in code coverage analysis
+    [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
     public class Sanitizer : ISanitizer
     {
         public string RemoveAllHtml(string input)
