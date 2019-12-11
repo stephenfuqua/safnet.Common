@@ -1,7 +1,7 @@
 ﻿using safnet.Common.BaseClasses;
 using safnet.Common.Exceptions;
 using System;
-using Xunit;
+using NUnit.Framework;
 
 namespace safnet.Common.UnitTests.Exceptions
 {
@@ -25,40 +25,40 @@ namespace safnet.Common.UnitTests.Exceptions
                 return ServerException.HandleException<Entity>(_exception, Action, Id);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmThatTheExceptionMessageIsStaticConstant()
             {
-                Assert.Equal(ServerException.DefaultMessage, ((Exception) RunTheTest()).Message);
+                Assert.AreEqual(ServerException.DefaultMessage, ((Exception) RunTheTest()).Message);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheInnerException()
             {
-                Assert.Same(_exception, RunTheTest().InnerException);
+                Assert.AreSame(_exception, RunTheTest().InnerException);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheContentDescriptionProperty()
             {
-                Assert.Equal(Message, RunTheTest().Content.Description);
+                Assert.AreEqual(Message, RunTheTest().Content.Description);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheContentIdProperty()
             {
-                Assert.Equal(Id, RunTheTest().Content.Id);
+                Assert.AreEqual(Id, RunTheTest().Content.Id);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheContentActionProperty()
             {
-                Assert.Equal(Action, RunTheTest().Content.Action);
+                Assert.AreEqual(Action, RunTheTest().Content.Action);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheContentModelTypeProperty()
             {
-                Assert.Equal(_type, RunTheTest().Content.ModelType);
+                Assert.AreEqual(_type, RunTheTest().Content.ModelType);
             }
         }
 
@@ -75,34 +75,34 @@ namespace safnet.Common.UnitTests.Exceptions
                 return ServerException.UpdateFailed<Entity>(Description, Id);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmThatTheExceptionMessageIsStaticConstant()
             {
-                Assert.Equal(ServerException.DefaultMessage, ((Exception) RunTheTest()).Message);
+                Assert.AreEqual(ServerException.DefaultMessage, ((Exception) RunTheTest()).Message);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheContentDescriptionProperty()
             {
-                Assert.Equal(Description, RunTheTest().Content.Description);
+                Assert.AreEqual(Description, RunTheTest().Content.Description);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheContentIdProperty()
             {
-                Assert.Equal(Id, RunTheTest().Content.Id);
+                Assert.AreEqual(Id, RunTheTest().Content.Id);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheContentActionProperty()
             {
-                Assert.Equal(Action, RunTheTest().Content.Action);
+                Assert.AreEqual(Action, RunTheTest().Content.Action);
             }
 
-            [Fact]
+            [Test]
             public void ConfirmTheContentModelTypeProperty()
             {
-                Assert.Equal(_type, RunTheTest().Content.ModelType);
+                Assert.AreEqual(_type, RunTheTest().Content.ModelType);
             }
         }
     }

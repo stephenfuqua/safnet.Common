@@ -1,20 +1,20 @@
 ﻿using safnet.Common.Exceptions;
 using System.Collections.Generic;
-using Xunit;
+using NUnit.Framework;
 
 namespace safnet.Common.UnitTests.Exceptions
 {
     public class UserExceptionTests
     {
-        [Fact]
+        [Test]
         public void ConfirmTheBasicConstructor()
         {
             var message = "asdfasdf";
             var actual = new UserException(message);
-            Assert.Equal(message, actual.Message);
+            Assert.AreEqual(message, actual.Message);
         }
         
-        [Fact]
+        [Test]
         public void ConfirmMessageFromListWithOneError()
         {
             var errors = new List<string>() { "one" };
@@ -22,10 +22,10 @@ namespace safnet.Common.UnitTests.Exceptions
 
             var actual = UserException.FromMultipleMessages(errors);
 
-            Assert.Equal(expected, actual.Message);
+            Assert.AreEqual(expected, actual.Message);
         }
 
-        [Fact]
+        [Test]
         public void ConfirmMessageFromListWithTwoErrors()
         {
             var errors = new List<string>() { "one", "two" };
@@ -33,7 +33,7 @@ namespace safnet.Common.UnitTests.Exceptions
 
             var actual = UserException.FromMultipleMessages(errors);
 
-            Assert.Equal(expected, actual.Message);
+            Assert.AreEqual(expected, actual.Message);
         }
     }
 }

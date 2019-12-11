@@ -1,11 +1,11 @@
-﻿using safnet.Common.Exceptions;
-using Xunit;
+﻿using NUnit.Framework;
+using safnet.Common.Exceptions;
 
 namespace safnet.Common.UnitTests.Exceptions
 {
     public class DatabaseExceptionContentTests
     {
-        [Fact]
+        [Test]
         public void ConfirmGetAndSetForId()
         {
             var expected = 2234;
@@ -16,11 +16,11 @@ namespace safnet.Common.UnitTests.Exceptions
 
             var actual = system.Id;
 
-            Assert.Equal(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
 
 
-        [Fact]
+        [Test]
         public void ConfirmGetAndSetForIdAsNull()
         {
             var system = new DatabaseExceptionContent();
@@ -30,7 +30,7 @@ namespace safnet.Common.UnitTests.Exceptions
             Assert.Null(system.Id);
         }
 
-        [Fact]
+        [Test]
         public void ConfirmGetAndSetForAction()
         {
             var expected = "2234";
@@ -41,10 +41,10 @@ namespace safnet.Common.UnitTests.Exceptions
 
             var actual = system.Action;
 
-            Assert.Equal(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
 
-        [Fact]
+        [Test]
         public void ConfirmGetAndSetForModelType()
         {
             var expected = this.GetType();
@@ -55,10 +55,10 @@ namespace safnet.Common.UnitTests.Exceptions
 
             var actual = system.ModelType;
 
-            Assert.Equal(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
 
-        [Fact]
+        [Test]
         public void ConfirmGetAndSetForDescription()
         {
             var expected = "2234";
@@ -69,7 +69,7 @@ namespace safnet.Common.UnitTests.Exceptions
 
             var actual = system.Description;
 
-            Assert.Equal(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
