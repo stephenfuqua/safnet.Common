@@ -6,7 +6,7 @@
     <Product>safnet.TestHelper.AsyncDbSet</Product>
     <Copyright>Copyright (c) Stephen Fuqua and contributors, 2019</Copyright>
     <Deterministic>false</Deterministic>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
     <RepositoryUrl>https://github.com/stephenfuqua/safnet.libraries</RepositoryUrl>
   </PropertyGroup>
 
